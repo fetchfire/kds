@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kapiti Deerstalkers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/stylesheets/app.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
+  <script src="/javascripts/all.js" type="text/javascript"></script>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var kds = new google.maps.LatLng(-40.9033445,175.0865151)
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: kds,
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.HYBRID
+        }
+
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        var marker = new google.maps.Marker({
+          position: kds,
+          map: map,
+          title: 'Kapiti Deer Stalkers',
+        });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+</head>
+<body>
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="index.html">Kapiti Deerstalkers</a></h1>
+      </li>
+    </ul>
+
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="has-dropdown not-click">
+          <a href="#">Club</a>
+          <ul class="dropdown">
+            <li><a href="membership.html">Become a member</a></li>
+            <li><a href="meetings.html">Club Meetings</a></li>
+            <li><a href="club_hunts.html">Club hunts</a></li>
+            <li><a href="club_range.html">Club range</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown not-click">
+          <a href="#">News</a>
+          <ul class="dropdown">
+            <li><a href="news.html">News</a></li>
+            <li><a href="newsletters.html">Newsletters</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="photos.html">Photos</a>
+        </li>
+        <li>
+          <a href="hunts.html">HUNTS course</a>
+        </li>
+        <li>
+          <a href="links.html">Links</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact us</a>
+        </li>
+      </ul>
+
+    </section>
+  </nav>
+
+  <img class="watermark" src="images/nzda_logo.jpg" />
+
+  <div class="container">
+    <div class="row">
+      <div class="span9"><div class="row">
+  <div class="large-12 columns">
+    <h3>Hunter Training</h3>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-8 columns">
+      <p>The New Zealand Deerstalkers' Association Inc, promotes hunting as a lifetime outdoor sport through the <strong>Hunter National Training Scheme (HUNTS)</strong>. This training programme is conducted at branch level under the guidance of a national coordinator and in partnership with <a href="http://www.mountainsafety.org.nz/">Mountain Safety Council</a>. and the <a href="http://www.nzshootingfed.org.nz/">New Zealand Shooting Federation</a>. </p>
+
+      <p>
+      The programme syllabus covers the knowledge and skills to operate safely as a hunter in the New Zealand outdoors and teaches the ethics of fair chase and the principles of managing a sustainable game resource. Besides ecology and ethics, the course includes training in equipment, clothing, navigation, firearms, hunting techniques, photography, first aid and bush craft.
+      </p>
+
+      <p>
+      The course has proved popular with young adults and new members of the Association and NZDA is committed to continuing to deliver a quality product. Increasingly, specialist instructors have been brought in to deliver specialty items in the curriculum. The programme manual has been extensively revised and NZDA plans to develop, in partnership with other national organisations, a qualification based on unit standards and recognized by the New Zealand Qualifications Authority.
+      </p>
+  </div>
+  <div class="large-4 columns">
+    <img src="images/hunts_connor.jpg" />
+  </div>       
+</div>
+
+<div class="row">
+  <div class="large-6 columns">
+    <img src="images/hunts_2013_group.jpg" />
+  </div> 
+  <div class="large-6 columns">
+    <p>
+    NZDA branches have huts, lodges, rifle ranges and hold local and national competitions in photography, literature, target shooting and trophy hunting. All this adds value to a membership in the organisation that acts as the advocate for game hunting in New Zealand.
+    </p>
+  </div>      
+</div>
+
+<div class="row">
+  <div class="large-12 columns"> 
+    <p>
+      <strong>THE PROGRAM</strong>
+
+      <li>What makes a Hunter?</li>
+      <li>Ethics and ecology</li>
+      <li>Equipment and food</li>
+      <li>Travel and navigation</li>
+      <li>Game animal species</li>
+      <li>Firearm safety while hunting</li>
+      <li>Firearms and marksmanship</li>
+      <li>Good hunting techniques</li>
+      <li>Trophy and meat</li>
+      <li>Survival First aid</li>
+      <li>Photography</li>
+    </p>
+
+  </div>      
+</div>
+
+<div class="row">
+  <div class="large-12 columns"> 
+    <strong>THE INSTRUCTORS</strong>
+    <p>
+      Our instructors have a proven level of competence through a national training and assessment package, and will coordinate the delivery of the HUNTS course with the support our national organisations who will pass on their experience in hunting and their knowledge to would-be hunters.
+    </p>
+  </div>      
+</div>
+
+<div class="row">
+  <div class="large-12 columns">    
+    <strong>THE DATES AND VENUE</strong>
+    <p>
+      The classroom nights will be at Reikiorangi Hall, bushcraft  at Otaki Forks, range day at the club range near Otaki, and the final hunt in Wanganui.
+    </p>
+    <p>
+      Mon 18 Oct 7pm at the club room: Introduction 
+    </p>
+    <p>
+      Thu 21 Aug 7pm at the club room: Trip planning, equipment, and food
+    </p>
+    <p>
+      Thu 28 Aug 7pm at the club room: Navigation theory
+    </p>
+    <p>
+      Sat 30 Aug 8am at the club range: Range day
+    </p>
+    <p>
+      Thu 4 Sep 7pm a the club room: Firearm safety
+    </p>
+    <p>
+      Sat 13 Sep - Sun 14 Sep Otaki Forks: River crossing, applied navigation
+    </p>
+    <p>
+      Sat 20 Sep - Sun 21 Sep Hunting!
+    </p>
+    <p>
+      Thu 25 Sep 7pm Course roundup and small goods night
+    </p>
+  </div>      
+</div>
+
+<div class="row">
+  <div class="large-12 columns">    
+    <strong>COST</strong>
+    <p>$170 per person, plus a Deerstalkers membership</p>
+  </div>      
+</div>
+
+<div class="row">
+  <div class="large-12 columns">    
+    <strong>IF THIS SOUNDS LIKE YOU – ACT NOW</strong>
+    <p>Numbers are limited to 12 participants. Contact the Club Secretary for details, or speak to one of our committee members at a meeting.</p>
+  </div>      
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="large-12 columns">    
+    <h4>HUNTS Manual</h4>
+
+    <p>If you cannot make it to the HUNTS course, the next best thing is the manual used in the course.</p>
+
+    <p>
+      <strong>Topics include:</strong> 
+      <li>bush and outdoor safety skills</li>
+      <li>firearms safety</li>
+      <li>good hunting techniques</li>
+      <li>trophies & meat</li>
+      <li>gear</li>
+      <li>game animal species - deer, thar, goat, pig, hare, possum, rabbit, wallaby</li>
+      <li>ethical behaviour for hunters.</li>
+    </p>
+
+    <p>This is an excellent read for new and experienced hunters and can be ordered from the <a href="http://www.mountainsafety.org.nz/Resources/default.asp">Mountain Safety Council</a>.</p>
+  </div>      
+</div></div>
+      <div class="span3">
+        <!-- page footer -->
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

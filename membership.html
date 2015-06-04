@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kapiti Deerstalkers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/stylesheets/app.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
+  <script src="/javascripts/all.js" type="text/javascript"></script>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var kds = new google.maps.LatLng(-40.9033445,175.0865151)
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: kds,
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.HYBRID
+        }
+
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        var marker = new google.maps.Marker({
+          position: kds,
+          map: map,
+          title: 'Kapiti Deer Stalkers',
+        });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+</head>
+<body>
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="index.html">Kapiti Deerstalkers</a></h1>
+      </li>
+    </ul>
+
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="has-dropdown not-click">
+          <a href="#">Club</a>
+          <ul class="dropdown">
+            <li><a href="membership.html">Become a member</a></li>
+            <li><a href="meetings.html">Club Meetings</a></li>
+            <li><a href="club_hunts.html">Club hunts</a></li>
+            <li><a href="club_range.html">Club range</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown not-click">
+          <a href="#">News</a>
+          <ul class="dropdown">
+            <li><a href="news.html">News</a></li>
+            <li><a href="newsletters.html">Newsletters</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="photos.html">Photos</a>
+        </li>
+        <li>
+          <a href="hunts.html">HUNTS course</a>
+        </li>
+        <li>
+          <a href="links.html">Links</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact us</a>
+        </li>
+      </ul>
+
+    </section>
+  </nav>
+
+  <img class="watermark" src="images/nzda_logo.jpg" />
+
+  <div class="container">
+    <div class="row">
+      <div class="span9"><div class="row">
+  <div class="large-12 columns">
+    <h3>Membership</h3>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-4 columns">
+    <p>Becoming a member is easy!</p>
+
+    <p>Print out an <a href="application_form.pdf">application form</a> and fill in your details. Then either send it in, or bring it along to the next club <a href="meetings.html">meeting</a>.</p>
+
+    <p>Not sure about joining the club? Come along to a <a href="meetings.html">meeting</a>, guests are welcome.</p>
+  </div>
+  <div class="large-8 columns vertical_line">
+    <strong>Membership has the following benefits:</strong>
+    <ul>
+      <li>NZDA $10 million Liability Insurance Cover, including $1 million rural fires extension.</li>
+      <li>NZDA working to protect your hunting interests.</li>
+      <li>NZ Hunting & Wildlife magazine (except for affiliates or associates; 1 copy per family).</li>
+      <li>Club newsletter.</li>
+      <li>Access to club range, hunting trips, equipment, dinners, and functions.</li>
+      <li>Access to club and NZDA shoots.</li>
+      <li>HUNTS (Hunter Understanding Training) courses.</li>
+    </ul>
+  </div>       
+</div></div>
+      <div class="span3">
+        <!-- page footer -->
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
